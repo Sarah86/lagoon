@@ -2,6 +2,7 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
+  "component---src-pages-index-jsx": () => import("./../src/pages/index.jsx" /* webpackChunkName: "component---src-pages-index-jsx" */),
   "component---src-templates-listing-jsx": () => import("./../src/templates/listing.jsx" /* webpackChunkName: "component---src-templates-listing-jsx" */),
   "component---src-templates-post-jsx": () => import("./../src/templates/post.jsx" /* webpackChunkName: "component---src-templates-post-jsx" */),
   "component---src-templates-tag-jsx": () => import("./../src/templates/tag.jsx" /* webpackChunkName: "component---src-templates-tag-jsx" */),

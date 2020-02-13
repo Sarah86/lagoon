@@ -59,6 +59,7 @@
     "gh-pages": "^2.2.0",
     "less": "^3.11.1",
     "prettier": "^1.17.0",
+    "react-responsive": "^8.0.3",
     "remark-cli": "^7.0.0",
     "remark-preset-lint-recommended": "^3.0.2",
     "stylelint": "^13.0.0",

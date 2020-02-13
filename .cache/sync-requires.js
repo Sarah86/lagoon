@@ -5,6 +5,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-pages-index-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/pages/index.jsx"))),
   "component---src-templates-listing-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/listing.jsx"))),
   "component---src-templates-post-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/post.jsx"))),
   "component---src-templates-tag-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/tag.jsx"))),

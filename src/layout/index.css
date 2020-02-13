@@ -18,9 +18,10 @@ body {
   min-width: 100vw;
 }
 
-.layout-container {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  padding: 20px;
+header .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
 }
