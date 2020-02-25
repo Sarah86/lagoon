@@ -3,16 +3,12 @@
     "develop": {
       "plugins": [
         {
-          "name": "babel-plugin-import",
+          "name": "babel-plugin-styled-components",
+          "stage": "develop",
           "options": {
-            "libraryName": "antd",
-            "libraryDirectory": "es",
-            "style": "css"
+            "plugins": [],
+            "ssr": false
           }
-        },
-        {
-          "name": "babel-plugin-lodash",
-          "options": {}
         }
       ],
       "presets": [],
@@ -24,16 +20,12 @@
     "develop-html": {
       "plugins": [
         {
-          "name": "babel-plugin-import",
+          "name": "babel-plugin-styled-components",
+          "stage": "develop-html",
           "options": {
-            "libraryName": "antd",
-            "libraryDirectory": "es",
-            "style": "css"
+            "plugins": [],
+            "ssr": false
           }
-        },
-        {
-          "name": "babel-plugin-lodash",
-          "options": {}
         }
       ],
       "presets": [],
@@ -45,16 +37,12 @@
     "build-html": {
       "plugins": [
         {
-          "name": "babel-plugin-import",
+          "name": "babel-plugin-styled-components",
+          "stage": "build-html",
           "options": {
-            "libraryName": "antd",
-            "libraryDirectory": "es",
-            "style": "css"
+            "plugins": [],
+            "ssr": true
           }
-        },
-        {
-          "name": "babel-plugin-lodash",
-          "options": {}
         }
       ],
       "presets": [],
@@ -66,16 +54,12 @@
     "build-javascript": {
       "plugins": [
         {
-          "name": "babel-plugin-import",
+          "name": "babel-plugin-styled-components",
+          "stage": "build-javascript",
           "options": {
-            "libraryName": "antd",
-            "libraryDirectory": "es",
-            "style": "css"
+            "plugins": [],
+            "ssr": true
           }
-        },
-        {
-          "name": "babel-plugin-lodash",
-          "options": {}
         }
       ],
       "presets": [],

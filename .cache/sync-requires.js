@@ -5,12 +5,9 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---src-pages-index-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/pages/index.jsx"))),
-  "component---src-templates-listing-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/listing.jsx"))),
-  "component---src-templates-post-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/post.jsx"))),
-  "component---src-templates-tag-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/tag.jsx"))),
-  "component---src-templates-category-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/templates/category.jsx"))),
-  "component---cache-dev-404-page-js": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/.cache/dev-404-page.js"))),
-  "component---src-pages-about-jsx": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/src/pages/about.jsx")))
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/.cache/dev-404-page.js"))),
+  "component---src-pages-404-js": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/src/pages/404.js"))),
+  "component---src-pages-index-js": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/src/pages/index.js"))),
+  "component---src-pages-page-2-js": hot(preferDefault(require("/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/src/pages/page-2.js")))
 }
 

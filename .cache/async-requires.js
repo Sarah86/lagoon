@@ -2,12 +2,9 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
-  "component---src-pages-index-jsx": () => import("./../src/pages/index.jsx" /* webpackChunkName: "component---src-pages-index-jsx" */),
-  "component---src-templates-listing-jsx": () => import("./../src/templates/listing.jsx" /* webpackChunkName: "component---src-templates-listing-jsx" */),
-  "component---src-templates-post-jsx": () => import("./../src/templates/post.jsx" /* webpackChunkName: "component---src-templates-post-jsx" */),
-  "component---src-templates-tag-jsx": () => import("./../src/templates/tag.jsx" /* webpackChunkName: "component---src-templates-tag-jsx" */),
-  "component---src-templates-category-jsx": () => import("./../src/templates/category.jsx" /* webpackChunkName: "component---src-templates-category-jsx" */),
   "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
-  "component---src-pages-about-jsx": () => import("./../src/pages/about.jsx" /* webpackChunkName: "component---src-pages-about-jsx" */)
+  "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
+  "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */)
 }
 
