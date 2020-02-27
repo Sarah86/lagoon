@@ -1,5 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:400,500%7cQuicksand:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
 
 :root{
     --header-size: 90px;
+
+    --color-white: #fff;
+    --color-primary: #dfab2d;
+	--color-secondary: #40b5e8;
+	--color-tertiary: #1c202a;
+	--color-gradient-start: #4762ff;
+	--color-gradient-stop: #ff798e;
+	--color-gradient-start-secondary: #0bccee;
+	--color-gradient-stop-secondary: #ac1de1;
+	--color-gradient-start-tertiary: #ffba83;
+	--color-gradient-stop-tertiary: #ffa5cd;
+}
+
+/*Typography*/
+
+body {
+    font-family: 'Lato', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-tertiary);
+}
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+    font-family: 'Raleway', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Borders*/
+
+.border-athens-gray {
+    border-color: rgba(128, 130, 145, 0.1);
+}
+
+/*Nav*/
+
+.main-nav > li > a {
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+}
+
+.main-nav > li.is-active > a, .main-nav > li:hover > a, .main-nav > li > a:hover {
+    color: var(--color-secondary);
+}
+.main-nav > li > a .link-ext {
+    background-color: var(--color-secondary);
+}
+
+.navbar-collapse.in {
+    background-color: var(--color-white);
 }

@@ -11,13 +11,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 
 import Header from "./header"
-import "./layout.css"
-import "./theme.css"
 import "./assets/vendors/liquid-icon/liquid-icon.min.css"
 import "./assets/vendors/font-awesome/css/font-awesome.min.css"
 import "./assets/css/theme-vendors.min.css"
 import "./assets/css/theme.min.css"
 import "./assets/css/themes/travel.css"
+import "./layout.css"
+import "./theme.css"
+
 
 const Layout = ({ children }) => {
   
@@ -37,11 +38,11 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          // maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-		  	<main id="content" className="content" style={{marginTop: 'var(--header-size'}}>
+		  	<main id="content" className="content" style={{marginTop: 'var(--header-size)'}}>
           {children}
         </main>
         <footer>

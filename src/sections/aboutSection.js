@@ -21,25 +21,7 @@ const AboutSection = () => (
                     </a>
                 </div>{/* /.lqd-column col-md-5 */}
                 <div className="lqd-column col-md-6 col-md-offset-1 text-center mb-30">
-                    <div className="liquid-img-group-single mb-3" data-reveal="true" data-reveal-options="{&quot;direction&quot;:&quot;lr&quot;,&quot;bgcolor&quot;:&quot;&quot;,&quot;delay&quot;:&quot;&quot;}">
-                        <div className="liquid-img-group-img-container">
-                            <div className="liquid-img-group-content content-floated-mid">
-                                <a href="https://www.youtube.com/watch?v=JN-suUcRdqQ" className="btn btn-naked fresco btn-icon-block btn-icon-top btn-icon-xlg btn-icon-circle btn-icon-solid btn-icon-ripple">
-                                    <span>
-                                        <span className="btn-icon bg-white text-primary">
-                                            <i className="fa fa-play" />
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>{/* /.liquid-img-group-content */}
-                            <div className="liquid-img-container-inner">
-                                <figure>
-                                    <img width={1141} height={760} src="./assets/demo/misc/fb-40.jpg" alt="On your own, you see. On a tour, you do." />
-                                </figure>
-                            </div>{/* /.liquid-img-container-inner */}
-                        </div>{/* /.liquid-img-group-img-container */}
-                    </div>{/* /.liquid-img-group-single */}
-                    <p>On your own, you see. On a tour, you do.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.2838087112373!2d-43.22054148388227!3d-22.976588884976323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd59f0392569d%3A0x816dbf880e8da697!2sComplexo%20Lagoon!5e0!3m2!1spt-BR!2sbr!4v1582766550481!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style={{border: 0}} allowfullscreen=""></iframe>
                 </div>{/* /.lqd-column col-md-6 col-md-offset-1 */}
             </div>{/* /.row */}
         </div>{/* /.container */}

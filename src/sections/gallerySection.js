@@ -53,25 +53,27 @@ const GallerySection = () => {
 
     return (
         <section className="vc_row pt-40 pb-40">
-            <h2 className="mt-0 mb-3">Galeria</h2>
-            <Gallery
-                photos={photos}
-                onClick={openLightbox}
-            />
-            <ModalGateway>
-                {viewerIsOpen ? (
-                <Modal onClose={closeLightbox}>
-                    <Carousel
-                    currentIndex={currentImage}
-                    views={photos.map(x => ({
-                        ...x,
-                        srcset: x.srcSet,
-                        caption: x.title
-                    }))}
-                    />
-                </Modal>
-                ) : null}
-             </ModalGateway>
+            <div className="container">
+                <h2 className="mt-0 mb-3">Galeria</h2>
+                <Gallery
+                    photos={photos}
+                    onClick={openLightbox}
+                />
+                <ModalGateway>
+                    {viewerIsOpen ? (
+                    <Modal onClose={closeLightbox}>
+                        <Carousel
+                        currentIndex={currentImage}
+                        views={photos.map(x => ({
+                            ...x,
+                            srcset: x.srcSet,
+                            caption: x.title
+                        }))}
+                        />
+                    </Modal>
+                    ) : null}
+                </ModalGateway>
+            </div>
         </section>
     )
 

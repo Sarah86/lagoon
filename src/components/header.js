@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
         <div className="container-fluid mainbar-container">
           <div className="mainbar">
             <div className="row mainbar-row align-items-lg-stretch px-4">
-              <div className="col-auto">
+              <div className="col pr-5">
                 <div className="navbar-header">
                   <a className="navbar-brand" style={{padding: '15px 0'}} href="/" rel="home">
                     <span className="navbar-brand-inner">
@@ -49,9 +49,9 @@ const Header = ({ siteTitle }) => {
                   </button>
                 </div>{/* /.navbar-header */}
               </div>{/* /.col */}
-              <div className="col px-8">
+              <div className="col pr-5">
                 <div className={`collapse navbar-collapse ${menuActive && 'in'} `}>
-                  <ul id="primary-nav" className="main-nav main-nav-hover-underline-3 nav align-items-lg-stretch justify-content-lg-start" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
+                  <ul id="primary-nav" className="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
                     <li className="current-menu-item">
                       <a href="#wrap">
                         <span className="link-icon" />
@@ -133,16 +133,6 @@ const Header = ({ siteTitle }) => {
                     <li><a href="#"><i className="fa fa-pinterest" /></a></li>
                     <li><a href="#"><i className="fa fa-instagram" /></a></li>
                   </ul>
-                </div>{/* /.header-module */}
-                <div className="header-module">
-                  <div className="iconbox iconbox-side iconbox-heading-xs iconbox-sm">
-                    <div className="iconbox-icon-wrap">
-                      <span className="iconbox-icon-container">
-                        <i className="icon-ion-ios-call" />
-                      </span>
-                    </div>{/* /.iconbox-icon-wrap */}
-                    <h3>0113 567 8901</h3>
-                  </div>{/* /.iconbox */}
                 </div>{/* /.header-module */}
               </div>{/* /.col */}
             </div>{/* /.mainbar-row */}
