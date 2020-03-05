@@ -18,6 +18,7 @@ import "./assets/css/theme.min.css"
 import "./assets/css/themes/travel.css"
 import "./layout.css"
 import "./theme.css"
+import { Device } from "./mediaQueries"
 
 
 const Layout = ({ children }) => {
@@ -42,7 +43,8 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-		  	<main id="content" className="content" style={{marginTop: 'var(--header-size)'}}>
+		  	<main id="content" className="content" 
+        style={Device.isDesktop && {marginTop: 'var(--header-size)'}}>
           {children}
         </main>
         <footer>

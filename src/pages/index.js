@@ -8,14 +8,16 @@ import VideoSection from "../sections/videoSection"
 import AboutSection from "../sections/aboutSection"
 import GallerySection from "../sections/gallerySection"
 import ParceirosSection from "../sections/parceirosSection"
+import MapSection from "../sections/mapSection"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <VideoSection/>
     <AboutSection/>
-    <GallerySection/>
     <ParceirosSection/>
+    <GallerySection/>
+    <MapSection/>
   </Layout>
 )
 

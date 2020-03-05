@@ -23,7 +23,14 @@ const FullWidthBackgroundVideo = styled(ReactPlayer)`
 
 const Video = ({ url, width, height, backgroundColor }) => (
   <div style={{ marginTop: '-1em' }}>
-    <FullWidthBackgroundVideo url={url} muted loop playing width={width} height={height} backgroundColor={backgroundColor}/>
+    <FullWidthBackgroundVideo
+      url={url} 
+      muted 
+      loop 
+      playing 
+      width={width} 
+      height={height} 
+      backgroundColor={backgroundColor}/>
   </div>
 )
 

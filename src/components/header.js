@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import Image from "./image";
+import { Device } from "./mediaQueries";
 
 const Header = ({ siteTitle }) => {
 
@@ -26,7 +27,8 @@ const Header = ({ siteTitle }) => {
   })
 
   return (
-    <header className="main-header main-header-overlay bg-white" style={{height:'var(--header-size)'}}>
+    <header className="main-header main-header-overlay bg-white" 
+    style={{height:'var(--header-size)'}}>
       <div className="mainbar-wrap">
         <div className="megamenu-hover-bg" />{/* /.megamenu-hover-bg */}
         <div className="container-fluid mainbar-container">
