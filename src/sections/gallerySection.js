@@ -1,8 +1,15 @@
 import React, { useState, useCallback } from "react"
 import Gallery from 'react-photo-gallery'
 import { useStaticQuery, graphql } from "gatsby"
-import Carousel, { Modal, ModalGateway } from "react-images";
-import Fade from 'react-reveal/Fade';
+import Carousel, { Modal, ModalGateway } from "react-images"
+import Fade from 'react-reveal/Fade'
+import styled from 'styled-components'
+
+import { device } from '../components/devices'
+
+const StyledDiv = styled.div`
+    margin: 0 -2.5em;  
+`
 
 const GallerySection = () => {
 
@@ -67,13 +74,20 @@ const GallerySection = () => {
             <div className="container">
             <Fade delay={1000} duration={2000}>
                 <h2 className="mt-0 mb-3">Galeria</h2>
+                <h3 className="mt-0 mb-40 font-size-14 text-uppercase ltr-sp-05 text-secondary">Quality tours crafted by local experts.</h3>
+                    <div className="lqd-h-sep w-10 mb-40">
+                        <span className="lqd-h-sep-inner" />{/* /.lqd-h-sep-inner */}
+                    </div>{/* /.lqd-h-sep */}
             </Fade>
             <Fade delay={1000} duration={2000}>
-                <Gallery
-                    targetRowHeight={targetRowHeight}
-                    photos={photos}
-                    onClick={openLightbox}
-                />
+                <StyledDiv>
+                    <Gallery
+                        targetRowHeight={targetRowHeight}
+                        photos={photos}
+                        onClick={openLightbox}
+                        margin={.5}
+                    />
+                </StyledDiv>
             </Fade>
                 <ModalGateway>
                     {viewerIsOpen ? (

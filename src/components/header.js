@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import Image from "./image";
-import { Device } from "./mediaQueries";
 
 const Header = ({ siteTitle }) => {
 
@@ -36,9 +35,13 @@ const Header = ({ siteTitle }) => {
             <div className="row mainbar-row align-items-lg-stretch px-4">
               <div className="col pr-5">
                 <div className="navbar-header">
-                  <a className="navbar-brand" style={{padding: '15px 0'}} href="/" rel="home">
+                  <a className="navbar-brand" style={{padding: '0 0'}} href="/" rel="home">
                     <span className="navbar-brand-inner">
-                      <Image imgName="TERRAÇO-LAGOON-logo.png" style={{width: '120px', height: 'auto'}}/>
+                      <Image imgName="TERRAÇO-LAGOON-logo.png" style={{
+                                                                  width: '85px', 
+                                                                  height: 'auto',
+                                                                  mixBlendMode: 'darken',
+                                                                  margin: '.5em 0'}}/>
                     </span>
                   </a>
                   <button type="button" onClick={handleActiveMenu} className={`navbar-toggle ${menuActive ? false : "collapsed"} nav-trigger style-mobile`} data-toggle="collapse" aria-expanded={`${menuActive}`}>

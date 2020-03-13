@@ -27,11 +27,12 @@ const Video = ({ url, width, height, backgroundColor }) => (
       url={url} 
       muted 
       loop 
-      playing 
+      light
+      // playing 
       width={width} 
       height={height} 
       backgroundColor={backgroundColor}/>
   </div>
-)
+) 
 
 export default Video

@@ -19,6 +19,7 @@ import "./assets/css/themes/travel.css"
 import "./layout.css"
 import "./theme.css"
 import { Device } from "./mediaQueries"
+import Footer from "./footer"
 
 
 const Layout = ({ children }) => {
@@ -47,12 +48,8 @@ const Layout = ({ children }) => {
         style={Device.isDesktop && {marginTop: 'var(--header-size)'}}>
           {children}
         </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Footer/>
     </>
   )
 }
