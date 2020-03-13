@@ -70,7 +70,7 @@ const GallerySection = () => {
       }
 
     return (
-        <section className="vc_row pt-40 pb-40">
+        <section className="vc_row pt-40 pb-40" id="galeria">
             <div className="container">
             <Fade delay={1000} duration={2000}>
                 <h2 className="mt-0 mb-3">Galeria</h2>
@@ -79,6 +79,8 @@ const GallerySection = () => {
                         <span className="lqd-h-sep-inner" />{/* /.lqd-h-sep-inner */}
                     </div>{/* /.lqd-h-sep */}
             </Fade>
+            </div>
+            <div className="container w-100">
             <Fade delay={1000} duration={2000}>
                 <StyledDiv>
                     <Gallery

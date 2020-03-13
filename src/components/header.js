@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
+import scrollTo from 'gatsby-plugin-smoothscroll'
+
 import Image from "./image";
 
 const Header = ({ siteTitle }) => {
@@ -58,7 +60,7 @@ const Header = ({ siteTitle }) => {
                 <div className={`collapse navbar-collapse ${menuActive && 'in'} `}>
                   <ul id="primary-nav" className="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
                     <li className="current-menu-item">
-                      <a href="#wrap">
+                      <a onClick={() => scrollTo('#home')}>
                         <span className="link-icon" />
                         <span className="link-txt">
                           <span className="link-ext" />
@@ -72,12 +74,12 @@ const Header = ({ siteTitle }) => {
                       </a>
                     </li>
                     <li>
-                      <a href="#about">
+                      <a onClick={() => scrollTo('#sobre')}>
                         <span className="link-icon" />
                         <span className="link-txt">
                           <span className="link-ext" />
                           <span className="txt">
-                            About
+                            O Terraço
                           <span className="submenu-expander">
                               <i className="fa fa-angle-down" />
                             </span>
@@ -86,12 +88,12 @@ const Header = ({ siteTitle }) => {
                       </a>
                     </li>
                     <li>
-                      <a href="#tours">
+                      <a onClick={() => scrollTo('#quem-confia')}>
                         <span className="link-icon" />
                         <span className="link-txt">
                           <span className="link-ext" />
                           <span className="txt">
-                            Tours
+                            Quem Confia
                           <span className="submenu-expander">
                               <i className="fa fa-angle-down" />
                             </span>
@@ -100,12 +102,12 @@ const Header = ({ siteTitle }) => {
                       </a>
                     </li>
                     <li>
-                      <a href="#blog">
+                      <a onClick={() => scrollTo('#galeria')}>
                         <span className="link-icon" />
                         <span className="link-txt">
                           <span className="link-ext" />
                           <span className="txt">
-                            Blog
+                            Galeria
                           <span className="submenu-expander">
                               <i className="fa fa-angle-down" />
                             </span>
@@ -114,12 +116,12 @@ const Header = ({ siteTitle }) => {
                       </a>
                     </li>
                     <li>
-                      <a href="#contact">
+                      <a onClick={() => scrollTo('#onde-estamos')}>
                         <span className="link-icon" />
                         <span className="link-txt">
                           <span className="link-ext" />
                           <span className="txt">
-                            Contact
+                            Onde Estamos
                           <span className="submenu-expander">
                               <i className="fa fa-angle-down" />
                             </span>

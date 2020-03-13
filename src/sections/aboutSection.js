@@ -14,7 +14,7 @@ const StyledImage = styled(Image)`
 `
 
 const AboutSection = () => (
-    <section className="vc_row pt-50 pb-50">
+    <section className="vc_row pt-50 pb-50" id="sobre">
         <div className="container">
             <div className="row d-flex flex-wrap align-items-center">
             <Fade delay={500} duration={2000}>

@@ -14,7 +14,7 @@ const StyledSection = styled.div`
 
 const VideoSection = () => (
 
-    <StyledSection>
+    <StyledSection id="home">
         <FullWidth style={{height: '100%'}}>
             <Video 
                 url="https://www.youtube.com/watch?v=uKTWd2DZkUw" 
