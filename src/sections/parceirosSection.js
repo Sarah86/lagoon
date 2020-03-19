@@ -4,8 +4,24 @@ import { useStaticQuery } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
+import {device} from "../components/devices.js"
+import SectionTitle from '../components/sectionTitle'
+import Section from "../components/section"
+
+
 const StyledDiv = styled.div`
     margin: 0 -2em;
+`
+
+const StyledFigure = styled.div`
+    width: 100%;
+    padding: 1em;
+    .gatsby-image-wrapper {
+        max-height: 3em;
+    }
+    @media ${device.desktop}{
+        padding: 2.5em
+    }
 `
 
 
@@ -31,11 +47,11 @@ const ParceirosSection = () => {
     const logoParceiro = file.node.childImageSharp.fluid;
   
         return (
-            <Fade cascade delay={1000} duration={2000}>
+            <Fade cascade duration={2000}>
                 <div key={`parceiro-${i}`} className="lqd-column col-md-2 col-sm-3 col-xs-4 text-center d-flex flex-wrap align-items-center justify-content-center">
-                    <figure className="p-5 w-100">
-                        <GatsbyImage fluid={logoParceiro} alt="Parceiros" fadeIn durationFadeIn={1000} style={{filter: 'grayscale(1) opacity(.8'}} />
-                    </figure>
+                    <StyledFigure>
+                        <GatsbyImage fluid={logoParceiro} alt="Parceiros" fadeIn durationFadeIn={1000} style={{filter: 'grayscale(1) opacity(.8'}} imgStyle={{objectFit: 'contain'}}/>
+                    </StyledFigure>
                 </div>
             </Fade>
         )
@@ -43,14 +59,10 @@ const ParceirosSection = () => {
     })
 
     return (
-        <section className="vc_row pt-50 pb-50" id="quem-confia">
+        <Section id="quem-confia">
         <div className="container">
-        <Fade delay={1000} duration={2000}>
-            <h2 className="mt-0 mb-3">Quem Confia</h2>
-            <h3 className="mt-0 mb-40 font-size-14 text-uppercase ltr-sp-05 text-secondary">Quality tours crafted by local experts.</h3>
-                    <div className="lqd-h-sep w-10 mb-40">
-                        <span className="lqd-h-sep-inner" />{/* /.lqd-h-sep-inner */}
-                    </div>{/* /.lqd-h-sep */}
+        <Fade duration={2000}>
+            <SectionTitle title="Quem Confia" subtitle="Quality tours crafted by local experts."/>
         </Fade>
         </div>
         <div className="container w-100">
@@ -58,7 +70,7 @@ const ParceirosSection = () => {
                 <LogosParceiros/>
             </StyledDiv>
         </div>
-        </section>
+        </Section>
 
     )
 }

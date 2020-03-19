@@ -15,7 +15,7 @@ import Img from 'gatsby-image'
 
 /* Optimized by Sarah on October with this solution https://spectrum.chat/gatsby-js/general/using-variables-in-a-staticquery~abee4d1d-6bc4-4202-afb2-38326d91bd05?m=MTU1MjY0MTA1NTE3Ng== */
 
-const Image = ({ className, imgName, style }) => (
+const Image = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -32,11 +32,11 @@ const Image = ({ className, imgName, style }) => (
       }
     `}
     render={data => {
-      const image = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName === imgName)
+      const image = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName === props.imgName)
       if (!image) {
         return null
       }
-      return <Img fluid={image.node.fluid} style={style} className={className} />
+      return <Img {...props} fluid={image.node.fluid} />
     }}
   />
 )

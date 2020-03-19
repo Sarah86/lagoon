@@ -25,7 +25,23 @@ const Header = ({ siteTitle }) => {
     body.setAttribute('data-mobile-nav-shceme', 'gray');
     body.setAttribute('data-mobile-header-scheme', 'gray');
     body.setAttribute('data-mobile-nav-breakpoint', '1199');
-  })
+  },[])
+  
+  const LinkMenu = ({link, className, title}) => {
+    return(
+      <li className={className} onClick={handleActiveMenu}>
+      <a onClick={() => scrollTo(`${link}`)} style={{cursor: 'default'}}>
+        <span className="link-icon" />
+        <span className="link-txt">
+          <span className="link-ext" />
+          <span className="txt">
+            {title}
+          </span>
+        </span>
+      </a>
+    </li>
+    )
+  }
 
   return (
     <header className="main-header main-header-overlay bg-white" 
@@ -59,76 +75,11 @@ const Header = ({ siteTitle }) => {
               <div className="col pr-5">
                 <div className={`collapse navbar-collapse ${menuActive && 'in'} `}>
                   <ul id="primary-nav" className="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
-                    <li className="current-menu-item">
-                      <a onClick={() => scrollTo('#home')}>
-                        <span className="link-icon" />
-                        <span className="link-txt">
-                          <span className="link-ext" />
-                          <span className="txt">
-                            Home
-                          <span className="submenu-expander">
-                              <i className="fa fa-angle-down" />
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => scrollTo('#sobre')}>
-                        <span className="link-icon" />
-                        <span className="link-txt">
-                          <span className="link-ext" />
-                          <span className="txt">
-                            O Terraço
-                          <span className="submenu-expander">
-                              <i className="fa fa-angle-down" />
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => scrollTo('#quem-confia')}>
-                        <span className="link-icon" />
-                        <span className="link-txt">
-                          <span className="link-ext" />
-                          <span className="txt">
-                            Quem Confia
-                          <span className="submenu-expander">
-                              <i className="fa fa-angle-down" />
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => scrollTo('#galeria')}>
-                        <span className="link-icon" />
-                        <span className="link-txt">
-                          <span className="link-ext" />
-                          <span className="txt">
-                            Galeria
-                          <span className="submenu-expander">
-                              <i className="fa fa-angle-down" />
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => scrollTo('#onde-estamos')}>
-                        <span className="link-icon" />
-                        <span className="link-txt">
-                          <span className="link-ext" />
-                          <span className="txt">
-                            Onde Estamos
-                          <span className="submenu-expander">
-                              <i className="fa fa-angle-down" />
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
+                    <LinkMenu link="#home" title="Home" className="current-menu-item"/>
+                    <LinkMenu link="#sobre" title="Sobre" className=""/>
+                    <LinkMenu link="#quem-confia" title="Quem confia" className=""/>
+                    <LinkMenu link="#galeria" title="Galeria" className=""/>
+                    <LinkMenu link="#onde-estamos" title="Onde estamos" className=""/>
                   </ul>{/* /#primary-nav  */}
                 </div>{/* /#main-header-collapse */}
               </div>{/* /.col */}

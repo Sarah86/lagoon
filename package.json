@@ -1,12 +1,16 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "espaco-lagoon",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Espaco Lagoon",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sarah Goncalves <sarah.goncalves@gmail.com>",
   "dependencies": {
+    "@types/react": "16.8.0",
+    "babel-plugin-styled-components": "1.5.0",
+    "bufferutil": "4.0.1",
+    "core-js": "3",
     "gatsby": "^2.19.7",
-    "gatsby-cli": "^2.10.0",
+    "gatsby-cli": "^2.10.13",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
@@ -21,10 +25,15 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0-beta.3",
+    "react-is": "16.8.0",
     "react-photo-gallery": "^8.0.0",
     "react-player": "^1.15.2",
     "react-reveal": "^1.2.2",
-    "styled-components": "^5.0.1"
+    "react-scroll-parallax": "^2.3.2",
+    "sockjs-client": "^1.4.0",
+    "styled-components": "^5.0.1",
+    "typescript": "^3.8.3",
+    "utf-8-validate": "5.0.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1",

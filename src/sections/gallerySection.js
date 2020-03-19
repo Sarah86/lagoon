@@ -6,10 +6,24 @@ import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
 import { device } from '../components/devices'
+import SectionTitle from "../components/sectionTitle"
+import Section from "../components/section"
 
 const StyledDiv = styled.div`
     margin: 0 -2.5em;  
 `
+
+const CustomModalFooter = ({ currentIndex, views }) => {
+	const activeView = currentIndex + 1
+	const totalViews = views.length
+
+	if (!activeView || !totalViews) return null
+	return (
+		<span>
+			{activeView} de {totalViews}
+		</span>
+	)
+}
 
 const GallerySection = () => {
 
@@ -64,24 +78,20 @@ const GallerySection = () => {
     function targetRowHeight(containerWidth) {
         let targetRowHeight = 100;
         if (containerWidth >= 500) targetRowHeight = 200;
-        if (containerWidth >= 900) targetRowHeight = 250;
+        if (containerWidth >= 900) targetRowHeight = 300;
         if (containerWidth >= 1500) targetRowHeight = 350;
         return targetRowHeight;
       }
 
     return (
-        <section className="vc_row pt-40 pb-40" id="galeria">
+        <Section id="galeria" noPaddingBottom>
+            <Fade duration={2000}>
             <div className="container">
-            <Fade delay={1000} duration={2000}>
-                <h2 className="mt-0 mb-3">Galeria</h2>
-                <h3 className="mt-0 mb-40 font-size-14 text-uppercase ltr-sp-05 text-secondary">Quality tours crafted by local experts.</h3>
-                    <div className="lqd-h-sep w-10 mb-40">
-                        <span className="lqd-h-sep-inner" />{/* /.lqd-h-sep-inner */}
-                    </div>{/* /.lqd-h-sep */}
-            </Fade>
+            <SectionTitle title="Galeria" subtitle="Quality tours crafted by local experts."/>
             </div>
+            </Fade>
             <div className="container w-100">
-            <Fade delay={1000} duration={2000}>
+            <Fade delay={200} duration={2000}>
                 <StyledDiv>
                     <Gallery
                         targetRowHeight={targetRowHeight}
@@ -95,18 +105,18 @@ const GallerySection = () => {
                     {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
                         <Carousel
-                        currentIndex={currentImage}
-                        views={photos.map(x => ({
-                            ...x,
-                            srcset: x.srcSet,
-                            caption: x.title
+                            components={{ FooterCount: CustomModalFooter }}
+                            currentIndex={currentImage}
+                            views={photos.map(x => ({
+                                ...x,
+                                srcset: x.srcSet,
                         }))}
                         />
                     </Modal>
                     ) : null}
                 </ModalGateway>
             </div>
-        </section>
+        </Section>
     )
 
 }

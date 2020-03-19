@@ -4,6 +4,8 @@ import styled from "styled-components"
 
 import { device } from "../components/devices"
 import Image from "../components/image"
+import SectionTitle from "../components/sectionTitle"
+import Section from "../components/section"
 
 
 const StyledImage = styled(Image)`
@@ -14,16 +16,12 @@ const StyledImage = styled(Image)`
 `
 
 const AboutSection = () => (
-    <section className="vc_row pt-50 pb-50" id="sobre">
+    <Section id="sobre">
         <div className="container">
             <div className="row d-flex flex-wrap align-items-center">
-            <Fade delay={500} duration={2000}>
+            <Fade duration={2000}>
                 <div className="lqd-column col-sm-5 mb-30">
-                    <h2 className="mt-0 mb-3">Terraço Lagoon</h2>
-                    <h3 className="mt-0 mb-40 font-size-14 text-uppercase ltr-sp-05 text-secondary">Quality tours crafted by local experts.</h3>
-                    <div className="lqd-h-sep w-10 mb-40">
-                        <span className="lqd-h-sep-inner" />{/* /.lqd-h-sep-inner */}
-                    </div>{/* /.lqd-h-sep */}
+                    <SectionTitle title="Terraço Lagoon" subtitle="Quality tours crafted by local experts."/>
                     <p> We have a selection of over 50 tour programs that range from introductory multi-country itineraries to more regional in-depth options.</p>
                     <br />
                     <p>You’re about to go on the most amazing journey! Welcome to one of Europe’s leading coach tour operators, Ave Tour.</p>
@@ -47,7 +45,7 @@ const AboutSection = () => (
             </Fade>
             </div>{/* /.row */}
         </div>{/* /.container */}
-    </section>
+    </Section>
 
 
 )
