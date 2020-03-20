@@ -1,14 +1,19 @@
-import React from "react"
-import { Parallax, useController } from 'react-scroll-parallax'
+import React, { useEffect } from "react"
+import { Parallax, useController, withController, ParallaxContext } from 'react-scroll-parallax'
 import Image from "./image";
 
 const ParallaxImage = ({imgName}) => {
-    
-    const { parallaxController } = useController();
-    
-    const handleLoad = () => {
-        parallaxController.update();
-    }
+    const context = React.useContext(ParallaxContext)
+        
+    useEffect(() => {
+        if (context) {
+            const { parallaxController } = useController();
+
+            window.requestAnimationFrame(() => {
+                parallaxController.update()
+            })
+        } 
+    },[context])
 
     return(
     <Parallax 
@@ -22,8 +27,8 @@ const ParallaxImage = ({imgName}) => {
             imgStyle={{mixBlendMode: 'overlay', filter: 'brightness(.8) grayscale(1)'}} 
             title="Espaço Lagoon" 
             alt="Espaço Lagoon"
-            onLoad={handleLoad}/>
+            />
     </Parallax>
 )};
 
-export default ParallaxImage; 
+export default withController(ParallaxImage); 
