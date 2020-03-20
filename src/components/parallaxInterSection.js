@@ -1,5 +1,5 @@
 import React from "react"
-import { Parallax, useController } from 'react-scroll-parallax'
+import { Parallax, ParallaxProvider, useController } from 'react-scroll-parallax'
 import Image from "./image";
 
 const ParallaxImage = ({imgName}) => {
@@ -11,19 +11,28 @@ const ParallaxImage = ({imgName}) => {
     }
 
     return(
-    <Parallax 
-        y={[-50, 50]} 
-        tagOuter="div" 
-        styleInner={{height: '100vh'}} 
-        styleOuter={{height: '100vh'}}>
-        <Image 
-            imgName={imgName} 
-            style={{backgroundColor: 'var(--color-secondary)', height: '100vh'}} 
-            imgStyle={{mixBlendMode: 'overlay', filter: 'brightness(.8) grayscale(1)'}} 
-            title="Espaço Lagoon" 
-            alt="Espaço Lagoon"
-            onLoad={handleLoad}/>
-    </Parallax>
+        <Parallax 
+            y={[-50, 50]} 
+            tagOuter="div" 
+            styleInner={{height: '100vh'}} 
+            styleOuter={{height: '100vh'}}>
+            <Image 
+                imgName={imgName} 
+                style={{backgroundColor: 'var(--color-secondary)', height: '100vh'}} 
+                imgStyle={{mixBlendMode: 'overlay', filter: 'brightness(.8) grayscale(1)'}} 
+                title="Espaço Lagoon" 
+                alt="Espaço Lagoon"
+                onLoad={handleLoad}/>
+        </Parallax>
 )};
 
-export default ParallaxImage; 
+
+const ParallaxApp = ({imgName}) => {
+    return(
+        <ParallaxProvider>
+            <ParallaxImage imgName={imgName}/>
+        </ParallaxProvider>
+    )
+}
+
+export default ParallaxApp; 

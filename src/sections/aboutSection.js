@@ -18,7 +18,7 @@ const StyledImage = styled(Image)`
 const AboutSection = () => (
     <Section id="sobre">
         <div className="container">
-            <div className="row d-flex flex-wrap align-items-center">
+            <div className="row d-flex flex-wrap align-items-stretch">
             <Fade duration={2000}>
                 <div className="lqd-column col-sm-5 mb-30">
                     <SectionTitle title="Terraço Lagoon" subtitle="Seu evento sob o cristo redentor e de frente para a Lagoa."/>
@@ -41,8 +41,8 @@ const AboutSection = () => (
                 </div>{/* /.lqd-column col-md-5 */}
             </Fade>
             <Fade delay={1000} duration={2000}>
-                <div className="lqd-column col-sm-6 col-sm-offset-1 text-center mb-30">
-                    <StyledImage imgName="mapa.jpg"/>
+                <div className="lqd-column col-sm-6 col-sm-offset-1 text-center mb-30 h-100">
+                    <StyledImage imgName="Lagoon-06.JPG" style={{height: '100%', marginRight: '-7em'}}/>
                 </div>{/* /.lqd-column col-md-6 col-md-offset-1 */}
             </Fade>
             </div>{/* /.row */}
