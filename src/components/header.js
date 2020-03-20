@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll'
