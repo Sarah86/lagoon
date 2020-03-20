@@ -5,7 +5,6 @@ import Carousel, { Modal, ModalGateway } from "react-images"
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
-import { device } from '../components/devices'
 import SectionTitle from "../components/sectionTitle"
 import Section from "../components/section"
 
@@ -87,7 +86,7 @@ const GallerySection = () => {
         <Section id="galeria" noPaddingBottom>
             <Fade duration={2000}>
             <div className="container">
-            <SectionTitle title="Galeria" subtitle="Quality tours crafted by local experts."/>
+            <SectionTitle title="Galeria" subtitle="Veja O Que Te Aguarda Em Espaço, Estrutura, Entorno E Vista"/>
             </div>
             </Fade>
             <div className="container w-100">

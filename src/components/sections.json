@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Home",
+        "id": "home"
+    },
+    {
+        "name": "Sobre",
+        "id": "sobre"
+    },
+    {
+        "name": "Quem Confia",
+        "id": "quem-confia"
+    },
+    {
+        "name": "Galeria",
+        "id": "galeria"
+    },
+    {
+        "name": "Fale Conosco",
+        "id": "fale-conosco"
+    }
+]

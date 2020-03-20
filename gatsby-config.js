@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Lagoon`,
-    description: `Terraço Lagoon`,
-    author: `@Sarah86`,
+    description: `Terraço Lagoon - Seu evento sob o Cristo Redentor e de frente para a Lagoa`,
+    author: `Terraço Lagoon`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
@@ -40,7 +40,7 @@ module.exports = {
         background_color: `#ffff`,
         theme_color: `#40b5e8`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -3,7 +3,11 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
+import Sections from "./sections.json"
+
+
 import Image from "./image";
+import SocialList from "./social";
 
 const Header = ({ siteTitle }) => {
 
@@ -27,21 +31,20 @@ const Header = ({ siteTitle }) => {
     body.setAttribute('data-mobile-nav-breakpoint', '1199');
   },[])
   
-  const LinkMenu = ({link, className, title}) => {
-    return(
-      <li className={className} onClick={handleActiveMenu}>
-      <a onClick={() => scrollTo(`${link}`)} style={{cursor: 'default'}}>
+
+  const LinkMenu = Sections.map((section, i) => (
+    <li onClick={handleActiveMenu} key={i}>
+      <a onClick={() => scrollTo(`#${section.id}`)} style={{cursor: 'default'}}>
         <span className="link-icon" />
         <span className="link-txt">
           <span className="link-ext" />
           <span className="txt">
-            {title}
+            {section.name}
           </span>
         </span>
       </a>
     </li>
-    )
-  }
+  ))
 
   return (
     <header className="main-header main-header-overlay bg-white" 
@@ -55,7 +58,7 @@ const Header = ({ siteTitle }) => {
                 <div className="navbar-header">
                   <a className="navbar-brand" style={{padding: '0 0'}} href="/" rel="home">
                     <span className="navbar-brand-inner">
-                      <Image imgName="TERRAÇO-LAGOON-logo.png" style={{
+                      <Image imgName="TL-COLOR-POSITIVA.png" style={{
                                                                   width: '85px', 
                                                                   height: 'auto',
                                                                   mixBlendMode: 'darken',
@@ -74,23 +77,14 @@ const Header = ({ siteTitle }) => {
               </div>{/* /.col */}
               <div className="col pr-5">
                 <div className={`collapse navbar-collapse ${menuActive && 'in'} `}>
-                  <ul id="primary-nav" className="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
-                    <LinkMenu link="#home" title="Home" className="current-menu-item"/>
-                    <LinkMenu link="#sobre" title="Sobre" className=""/>
-                    <LinkMenu link="#quem-confia" title="Quem confia" className=""/>
-                    <LinkMenu link="#galeria" title="Galeria" className=""/>
-                    <LinkMenu link="#onde-estamos" title="Onde estamos" className=""/>
+                  <ul id="primary-nav" className="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center">
+                    {LinkMenu}
                   </ul>{/* /#primary-nav  */}
                 </div>{/* /#main-header-collapse */}
               </div>{/* /.col */}
               <div className="col text-right">
                 <div className="header-module">
-                  <ul className="social-icon branded-text social-icon-md">
-                    <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                    <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                    <li><a href="#"><i className="fa fa-pinterest" /></a></li>
-                    <li><a href="#"><i className="fa fa-instagram" /></a></li>
-                  </ul>
+                 <SocialList className="social-icon branded-text social-icon-md"/>
                 </div>{/* /.header-module */}
               </div>{/* /.col */}
             </div>{/* /.mainbar-row */}

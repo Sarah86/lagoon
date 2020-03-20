@@ -21,10 +21,12 @@ const AboutSection = () => (
             <div className="row d-flex flex-wrap align-items-center">
             <Fade duration={2000}>
                 <div className="lqd-column col-sm-5 mb-30">
-                    <SectionTitle title="Terraço Lagoon" subtitle="Quality tours crafted by local experts."/>
-                    <p> We have a selection of over 50 tour programs that range from introductory multi-country itineraries to more regional in-depth options.</p>
+                    <SectionTitle title="Terraço Lagoon" subtitle="Seu evento sob o cristo redentor e de frente para a Lagoa."/>
+                    <p> Bem vindo ao Terraço Lagoon. Agora o Rio de Janeiro tem uma moderna, completa e versátil opção de locação para a realização de eventos das mais diversas naturezas.</p>
                     <br />
-                    <p>You’re about to go on the most amazing journey! Welcome to one of Europe’s leading coach tour operators, Ave Tour.</p>
+                    <p>Tudo isso no coração da área nobre da cidade, cercado de suas belezas naturais, sob os braços do Cristo Redentor e de frente para um dos espelhos d’água mais icônicos da cidade: a Lagoa Rodrigo de Freitas.</p>
+                    <p>Aqui entra um parágrafo falando da parte técnica, serviços inclusos, facilidades e etc.</p>
+                    <p>Estamos à sua disposição para receber o seu evento. Entre em contato e faça agora mesmo a sua reserva.</p>
                     <br />
                     <h3 className="btn-txt btn btn-naked font-weight-bold text-uppercase">
                             Ficha técnica

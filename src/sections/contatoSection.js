@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react"
+import React from "react"
 import Fade from 'react-reveal/Fade';
 import styled from "styled-components"
 
@@ -32,10 +32,10 @@ const StyledFormContainer = styled.div`
 const ContatoSection = () => {
 
     return (
-            <Section id="onde-estamos">
+            <Section id="fale-conosco">
                 <Fade duration={2000}>
                 <div className="container">
-                    <SectionTitle title="Contato" subtitle="Quality tours crafted by local experts."/>
+                    <SectionTitle title="Fale Conosco" subtitle="Nos Envie Uma Mensagem E Dê O Primeiro Passo Para Um Evento Memorável"/>
                 </div>
                 <StyledContainer className="container">
                     <div className="row">

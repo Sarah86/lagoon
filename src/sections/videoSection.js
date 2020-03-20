@@ -7,7 +7,7 @@ import { device } from "../components/devices.js"
 const StyledSection = styled.div`
     height: calc(100vh - 40px);
     position: relative;
-    @media ${device.desktop}{
+    @media ${device.largeDesktop}{
         margin-top: 75px;
     }
 `
@@ -17,9 +17,9 @@ const VideoSection = () => (
     <StyledSection id="home" className="bg-white z-index-1">
         <FullWidth style={{height: '100%'}}>
             <Video 
-                url="https://www.youtube.com/watch?v=uKTWd2DZkUw" 
+                url="https://www.youtube.com/watch?v=qh8T9B4e6To" 
                 width="100vw" 
-                height="100%" 
+                height="100%"
                 backgroundColor=" rgba(0, 0, 0, 0.3)" />
         </FullWidth>
     </StyledSection>

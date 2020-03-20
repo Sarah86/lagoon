@@ -62,7 +62,7 @@ const ParceirosSection = () => {
         <Section id="quem-confia">
         <div className="container">
         <Fade duration={2000}>
-            <SectionTitle title="Quem Confia" subtitle="Quality tours crafted by local experts."/>
+            <SectionTitle title="Clientes e Parceiros" subtitle="Confira as marcas que realizam seus eventos no Terraço Lagoon"/>
         </Fade>
         </div>
         <div className="container w-100">
