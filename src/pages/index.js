@@ -1,5 +1,5 @@
 import React from "react"
-import { ParallaxProvider } from 'react-scroll-parallax'
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,21 +8,18 @@ import AboutSection from "../sections/aboutSection"
 import GallerySection from "../sections/gallerySection"
 import ParceirosSection from "../sections/parceirosSection"
 import ContatoSection from "../sections/contatoSection"
-import ParallaxImage from "../components/parallaxEffect"
-import ParallaxCache from "../components/parallaxCache"
-import ParallaxEffect from "../components/parallaxEffect"
+import ParallaxBannerLagoon from "../components/parallaxBannerLagoon"
 
 const IndexPage = () => (
     <Layout>
       <SEO title="Espaço Lagoon" />
       <VideoSection/>
       <AboutSection/>
-        <ParallaxEffect imgName="Lagoon-04.JPG"/>
-        <ParceirosSection/>
-        <ParallaxEffect imgName="Lagoon-08.JPG"/>
-        <GallerySection/>
-        <ParallaxEffect imgName="Lagoon-06.JPG"/>
-        <ContatoSection/>
+      <ParallaxBannerLagoon imgName="1.png"/>
+      <GallerySection/>
+      <ParallaxBannerLagoon imgName="2.png"/>
+      <ContatoSection/>
+      <ParallaxBannerLagoon imgName="15.jpg"/>
     </Layout>
 )
 

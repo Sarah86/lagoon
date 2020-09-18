@@ -20,7 +20,7 @@ const Form = () => {
                                             <textarea cols={10} rows={3} name="message" aria-required="true" aria-invalid="false" placeholder="Sua mensagem" required defaultValue={""} />
                                         </div>{/* /.col-md-12 */}
                                         <div className="lqd-column col-md-12 text-md-right">
-                                            <input type="submit" defaultValue="Subscribe" className="font-size-13 text-uppercase ltr-sp-2 font-weight-semibold text-white w-100" />
+                                            <input type="submit" defaultValue="Enviar" className="font-size-13 text-uppercase ltr-sp-2 font-weight-semibold text-white w-100" />
                                         </div>{/* /.col-md-12 */}
                                     </div>{/* /.row */}
                                 </form>

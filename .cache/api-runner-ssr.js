@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/sarah/Documenti/PROJETOS/LAGOON/lagoon-website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#ffff","theme_color":"#40b5e8","display":"minimal-ui","icon":"src/images/favicon.png"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

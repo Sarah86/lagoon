@@ -1,18 +1,13 @@
-import React from "react"
-import { withController } from 'react-scroll-parallax';
+import React, { useContext } from "react"
+import { Parallax } from 'react-scroll-parallax';
 
 import Image from "./image";
 
-const ParallaxImage = ({ imgName }) => {
 
-    const handleLoad = () => {
-        // updates cached values after image dimensions have loaded
-        parallaxController.update();
-    };
-
-    return(
+const ParallaxImage = ({imgName}) => (
+    <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
         <Image 
-            imgName={imgName} 
+         imgName={imgName} 
             style={{
                 backgroundColor: 'var(--color-secondary)', 
                 height: '100vh'}} 
@@ -20,10 +15,8 @@ const ParallaxImage = ({ imgName }) => {
                 mixBlendMode: 'overlay', 
                 filter: 'brightness(.8) grayscale(1)'}} 
             title="Espaço Lagoon" 
-            alt="Espaço Lagoon"
-            onLoad={handleLoad}/>
-    )
-    
-}
+            alt="Espaço Lagoon" />
+    </Parallax>
+);
 
-export default withController(ParallaxImage)
+export default ParallaxImage;

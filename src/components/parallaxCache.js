@@ -1,4 +1,6 @@
-import { useController } from "react-scroll-parallax"
+import React, {useLayoutEffect} from "react"
+import { useController } from 'react-scroll-parallax';
+
 
 const ParallaxCache = () => {
     const { parallaxController } = useController();
@@ -11,6 +13,5 @@ const ParallaxCache = () => {
  
     return null;
 };
- 
+
 export default ParallaxCache
-// <ParallaxCache /> now can be used anywhere you have problems with cached attributes

@@ -31,12 +31,9 @@ const Contato = () => (
   <div className="lqd-column col-md-4 col-sm-6 pt-30">
     <h3 className="widget-title text-white">Contato</h3>
     <p>
-      hello@ave.com
+    contato@partygroup.com.br
       <br />
-      290 Maryam Springs 260,
-      Courbevoie, Paris, France
-      <br />
-      +47 213 5941 295
+      Av. Borges de Medeiros, 1424 Bloco III Lagoa, Rio de Janeiro – RJ – CEP 22470-003
       <SocialList className="social-icon social-icon-sm pt-30" />
     </p>
   </div>
@@ -86,8 +83,11 @@ const Footer = () => {
       <section className="bt-fade-white-015 pt-35 pb-35 mt-50">
         <div className="container">
           <div className="row">
-            <div className="lqd-column col-12 text-md-right">
-              <p className="my-0"><span style={{ fontSize: 15 }}>© 2020 Espaço Lagoon. Desenvolvimento <a href="http://gara.dj">Garadj</a>.</span></p>
+            <div className="lqd-column col-md-6 text-md-left">
+              <p className="my-0"><span style={{ fontSize: 15 }}>© 2020 Espaço Lagoon.</span> </p>
+            </div>{/* /.col-md-6 text-md-right */}
+            <div className="lqd-column col-md-6 text-md-right">
+              <p  className="my-0"><span style={{ fontSize: 15 }}>Design: <a href="http://gara.dj">Alvaro Marques</a>. Desenvolvimento Web: <a href="http://sarahgoncalves.netlify.app">Sarah Gonçalves</a>.</span></p>
             </div>{/* /.col-md-6 text-md-right */}
           </div>{/* /.row */}
         </div>{/* /.container */}
