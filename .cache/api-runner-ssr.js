@@ -5,6 +5,12 @@ var plugins = [{
       plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-cookiehub-banner/gatsby-ssr'),
+      options: {"plugins":[],"cookieHubId":"a4c480d0","cookieHubV2Api":false,"categories":[{"categoryName":"analytics","cookieName":"gatsby-plugin-google-analytics-gdpr_cookies-enabled"},{"categoryName":"marketing","cookieName":"marketing-enabled"}]},
+    },{
       plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#ffff","theme_color":"#40b5e8","display":"minimal-ui","icon":"src/images/favicon.png"},
     }]
