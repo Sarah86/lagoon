@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import YouTubePlayer from 'react-player/lib/players/YouTube'
 
-import Cover from "../images/thumb-video-home-1.jpg"
+import Cover from "../images/thumb-video-home-1.webp"
 
 const FullWidthBackgroundVideo = styled(ReactPlayer)`
   position: absolute;
