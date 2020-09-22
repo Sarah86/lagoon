@@ -28,7 +28,7 @@ const SigaNos = () => (
 )
 
 const Contato = () => (
-  <div className="lqd-column col-md-4 col-sm-6 pt-30">
+  <div className="lqd-column col-md-5 col-sm-6 pt-30">
     <h3 className="widget-title text-white">Contato</h3>
     <p>
     contato@partygroup.com.br
@@ -49,7 +49,7 @@ const Links = () => {
   ))
 
   return (
-    <div className="lqd-column col-md-4 col-sm-6 pt-30">
+    <div className="lqd-column col-md-5 col-sm-6 pt-30">
       <h3 className="widget-title text-white">Links</h3>
       <ul className="lqd-custom-menu reset-ul text-white">
         {LinkMenu}
@@ -57,6 +57,13 @@ const Links = () => {
     </div>
   )
 }
+
+const Divider = (params) => {
+  return(
+    <div className="col-md-2"></div>
+  )
+}
+
 
 const Footer = () => {
 
@@ -75,7 +82,7 @@ const Footer = () => {
           </div>
           <div className="row text-center">
             <Links />
-            <SigaNos />
+            <Divider />
             <Contato />
           </div>{/* /.row */}
         </div>{/* /.container */}

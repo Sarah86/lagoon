@@ -8,7 +8,6 @@ const StyledSection = styled.div`
     height: calc(100vh - 40px);
     position: relative;
     @media ${device.largeDesktop}{
-        margin-top: 75px;
     }
 `
 

@@ -17,9 +17,9 @@ const IndexPage = () => (
       <AboutSection/>
       <ParallaxBannerLagoon imgName="1.png"/>
       <GallerySection/>
-      <ParallaxBannerLagoon imgName="2.png"/>
+      <ParallaxBannerLagoon imgName="17.jpg"/>
       <ContatoSection/>
-      <ParallaxBannerLagoon imgName="15.jpg"/>
+      <ParallaxBannerLagoon imgName="16.jpg"/>
     </Layout>
 )
 

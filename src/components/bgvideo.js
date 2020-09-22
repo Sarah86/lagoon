@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import YouTubePlayer from 'react-player/lib/players/YouTube'
 
-import Cover from "../images/Video-Cover-tinyfied.jpg"
+import Cover from "../images/thumb-video-home-1.jpg"
 
 const FullWidthBackgroundVideo = styled(ReactPlayer)`
   position: absolute;
@@ -20,15 +20,13 @@ const Video = ({ url, width, height, backgroundColor }) => (
       config={{
         youtube: {
           playerVars: { 
-            showinfo: 0,
             modestbranding: 1
           }
         }
        }}
-      muted 
       loop 
       light={Cover}
-      //playing 
+      playing 
       width={width} 
       height={height} 
       backgroundColor={backgroundColor}/>

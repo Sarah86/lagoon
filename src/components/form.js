@@ -8,7 +8,8 @@ const Form = () => {
                                 <h5 className="my-0 font-size-30 text-dark" style={{lineHeight: 1}}>Envie uma mensagem</h5>
                             </header>{/* /.fancy-title */}
                             <div className="contact-form contact-form-inputs-sm contact-form-inputs-underlined contact-form-button-md contact-form-button-block">
-                                <form action="assets/php/mailer.php" method="post" noValidate="novalidate">
+                                <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                <input type="hidden" name="form-name" value="contact" />
                                     <div className="row">
                                         <div className="lqd-column col-md-12">
                                             <input type="text" name="name" aria-required="true" aria-invalid="false" placeholder="Nome" required />

@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="main-header main-header-overlay bg-white" 
-    style={{height:'var(--header-size)'}}>
+    style={{height:'var(--header-size)', position: 'sticky'}}>
       <div className="mainbar-wrap">
         <div className="megamenu-hover-bg" />{/* /.megamenu-hover-bg */}
         <div className="container-fluid mainbar-container">

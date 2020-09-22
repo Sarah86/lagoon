@@ -12,11 +12,7 @@ const ParallaxBannerLagoon = ({imgName}) => {
                     <Image
                     imgName={imgName} 
                         style={{
-                            backgroundColor: 'var(--color-secondary)', 
                             height: '100%'}} 
-                        imgStyle={{
-                            mixBlendMode: 'overlay', 
-                            filter: 'brightness(.8) grayscale(1)'}} 
                         title="Espaço Lagoon" 
                         alt="Espaço Lagoon" />,
                     amount: 0.3,
