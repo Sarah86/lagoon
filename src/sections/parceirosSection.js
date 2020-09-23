@@ -1,6 +1,6 @@
 import React from 'react'
 import GatsbyImage from 'gatsby-image'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
