@@ -1,12 +1,10 @@
 import React from "react"
-import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VideoSection from "../sections/videoSection"
 import AboutSection from "../sections/aboutSection"
 import GallerySection from "../sections/gallerySection"
-import ParceirosSection from "../sections/parceirosSection"
 import ContatoSection from "../sections/contatoSection"
 import ParallaxBannerLagoon from "../components/parallaxBannerLagoon"
 

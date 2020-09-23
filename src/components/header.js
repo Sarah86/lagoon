@@ -28,12 +28,18 @@ const Header = ({ siteTitle }) => {
     body.setAttribute('data-mobile-nav-shceme', 'gray');
     body.setAttribute('data-mobile-header-scheme', 'gray');
     body.setAttribute('data-mobile-nav-breakpoint', '1199');
-  },[])
+  })
   
 
   const LinkMenu = Sections.map((section, i) => (
     <li onClick={handleActiveMenu} key={i}>
-      <a onClick={() => scrollTo(`#${section.id}`)} style={{cursor: 'default'}}>
+      <a
+          href={`#${section.id}`}
+          onClick={(event) => {
+          event.preventDefault();
+          scrollTo(`#${section.id}`)
+          }} 
+          style={{ cursor: 'default' }}>
         <span className="link-icon" />
         <span className="link-txt">
           <span className="link-ext" />

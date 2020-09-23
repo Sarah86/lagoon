@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
-import YouTubePlayer from 'react-player/lib/players/YouTube'
 
 import Cover from "../images/thumb-video-home-1.webp"
 
@@ -13,7 +12,7 @@ const FullWidthBackgroundVideo = styled(ReactPlayer)`
   }
 `
 
-const Video = ({ url, width, height, backgroundColor }) => (
+const Video = ({ url, width, height, backgroundcolor }) => (
   <div style={{ marginTop: '-1em' }}>
     <FullWidthBackgroundVideo
       url={url} 
@@ -29,7 +28,7 @@ const Video = ({ url, width, height, backgroundColor }) => (
       playing 
       width={width} 
       height={height} 
-      backgroundColor={backgroundColor}/>
+      />
   </div>
 ) 
 
