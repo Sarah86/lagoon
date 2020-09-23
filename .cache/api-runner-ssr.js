@@ -12,7 +12,7 @@ var plugins = [{
       options: {"plugins":[],"cookieHubId":"a4c480d0","cookieHubV2Api":false,"categories":[{"categoryName":"analytics","cookieName":"gatsby-plugin-google-analytics-gdpr_cookies-enabled"},{"categoryName":"marketing","cookieName":"marketing-enabled"}]},
     },{
       plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#ffff","theme_color":"#40b5e8","display":"minimal-ui","icon":"src/images/favicon.png"},
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#ffff","theme_color":"#40b5e8","display":"minimal-ui","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"5bb0042bfe0396ea11a7953f33577541"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
