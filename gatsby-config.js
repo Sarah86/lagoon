@@ -10,6 +10,26 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-plugin-cookiehub-banner`,
+      options: {
+          // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
+          cookieHubId: "a4c480d0",
+          // Optional parameter (default false) - Use new v2 API.
+          cookieHubV2Api: false,
+          // Categories configured with CookieHub
+          categories: [
+          { 
+              categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
+              cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
+          },
+          { 
+              categoryName: 'marketing',
+              cookieName: 'marketing-enabled'
+          }
+          ]
+      },
+    },
+     {
       resolve: `gatsby-plugin-google-analytics-gdpr`,
       options: {
         // The property ID; the tracking code won't be generated without it.
@@ -29,26 +49,6 @@ module.exports = {
         }
       },
     },
-    {
-      resolve: `gatsby-plugin-cookiehub-banner`,
-      options: {
-          // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-          cookieHubId: "a4c480d0",
-          // Optional parameter (default false) - Use new v2 API.
-          cookieHubV2Api: false,
-          // Categories configured with CookieHub
-          categories: [
-          { 
-              categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-              cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
-          },
-          { 
-              categoryName: 'marketing',
-              cookieName: 'marketing-enabled'
-          }
-          ]
-      }
-   },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
