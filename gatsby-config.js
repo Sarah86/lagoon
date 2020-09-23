@@ -8,6 +8,8 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-cookiehub-banner`,
       options: {
