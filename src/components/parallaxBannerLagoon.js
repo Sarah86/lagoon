@@ -2,7 +2,16 @@ import React from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax'
 import Image from './image'
 
-const ParallaxBannerLagoon = ({imgName}) => {
+import { withController} from 'react-scroll-parallax';
+
+
+
+const ParallaxBannerLagoon = (props) => {
+
+    const handleLoad = () => {
+        // updates cached values after image dimensions have loaded
+        props.parallaxController.update();
+    };
 
     return(
         <ParallaxBanner
@@ -10,7 +19,8 @@ const ParallaxBannerLagoon = ({imgName}) => {
                 {
                     children:  
                     <Image
-                    imgName={imgName} 
+                    onLoad={handleLoad}
+                    imgName={props.imgName} 
                         style={{
                             height: '100%'}} 
                         title="Espaço Lagoon" 
@@ -26,4 +36,4 @@ const ParallaxBannerLagoon = ({imgName}) => {
 }
 
 
-export default ParallaxBannerLagoon
+export default withController(ParallaxBannerLagoon)
