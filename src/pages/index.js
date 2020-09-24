@@ -7,7 +7,6 @@ import AboutSection from "../sections/aboutSection"
 import GallerySection from "../sections/gallerySection"
 import ContatoSection from "../sections/contatoSection"
 import ParallaxBannerLagoon from "../components/parallaxBannerLagoon"
-import ParallaxCache from "../components/parallaxCache"
 
 const IndexPage = () => (
     <Layout>
