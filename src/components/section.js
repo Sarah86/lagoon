@@ -4,7 +4,7 @@ import styled from "styled-components"
 const StyledSection = styled.section`
     position: relative;
     min-height: 100vh;
-    padding-top: 150px;
+    margin-top: 150px;
     padding-bottom: ${props => props.noPaddingBottom ? 0 : '150px'};
 `
 

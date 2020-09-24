@@ -34,7 +34,7 @@ const ParceirosSection = () => {
                 node {
                     childImageSharp {
                         fluid(maxWidth: 200, quality: 100, traceSVG: {color: "#40b5e8"}) {
-                            ...GatsbyImageSharpFluid_tracedSVG
+                            ...GatsbyImageSharpFluid
                         }
                     }
                 }

@@ -1,8 +1,7 @@
+import { useStaticQuery, graphql } from 'gatsby'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
-
-import Cover from "../images/thumb-video-home-1.webp"
 
 const FullWidthBackgroundVideo = styled(ReactPlayer)`
   position: absolute;
@@ -12,10 +11,25 @@ const FullWidthBackgroundVideo = styled(ReactPlayer)`
   }
 `
 
-const Video = ({ url, width, height, backgroundcolor }) => (
+const Video = ({ url, width, height }) => {
+  
+  const data = useStaticQuery(graphql`
+  {
+    file(name: {eq: "video-lagoon"}) {
+      childImageSharp {
+        fluid(quality: 90, jpegProgressive: true, maxWidth: 1400) {
+          srcWebp
+          src
+        }
+      }
+    }
+  }
+`)
+
+  return(
   <div style={{ marginTop: '-1em' }}>
     <FullWidthBackgroundVideo
-      url={url} 
+      url={url}   gat
       config={{
         youtube: {
           playerVars: { 
@@ -24,12 +38,16 @@ const Video = ({ url, width, height, backgroundcolor }) => (
         }
        }}
       loop 
-      light={Cover}
+      light={data.file.childImageSharp.fluid.src}
       playing 
       width={width} 
       height={height} 
       />
   </div>
 ) 
+}
+
+
+
 
 export default Video
