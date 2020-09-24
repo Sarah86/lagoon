@@ -6382,7 +6382,7 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-cli@^2.11.0, gatsby-cli@^2.12.100:
+gatsby-cli@^2.12.100:
   version "2.12.100"
   resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.100.tgz#791112a9228d6c2ef06c1042203312ac32ed5a71"
   integrity sha512-cRXKMBKC4WQWwIy/XnhJAW6lcwE+dWSFquUb8kXFMUpWa17Wp8//q9/5YYxE0aTQt1tM5HvS+HF9dDFhuCBZuQ==
