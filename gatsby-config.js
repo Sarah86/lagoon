@@ -8,7 +8,6 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-cookiehub-banner`,
@@ -76,8 +75,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Terraço Lagoon`,
+        short_name: `lagoon`,
         start_url: `/`,
         background_color: `#ffff`,
         theme_color: `#40b5e8`,

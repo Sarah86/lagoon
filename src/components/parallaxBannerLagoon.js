@@ -1,9 +1,6 @@
 import React from 'react'
-import { ParallaxBanner } from 'react-scroll-parallax'
+import { ParallaxBanner, withController } from 'react-scroll-parallax'
 import Image from './image'
-
-import { withController} from 'react-scroll-parallax';
-
 
 
 const ParallaxBannerLagoon = (props) => {

@@ -2,9 +2,6 @@ module.exports = [{
       plugin: require('../node_modules/gatsby-plugin-smoothscroll/gatsby-browser.js'),
       options: {"plugins":[]},
     },{
-      plugin: require('../node_modules/gatsby-plugin-offline/gatsby-browser.js'),
-      options: {"plugins":[]},
-    },{
       plugin: require('../node_modules/gatsby-plugin-google-analytics-gdpr/gatsby-browser.js'),
       options: {"plugins":[],"trackingId":"YOUR_GOOGLE_ANALYTICS_TRACKING_ID","enableDevelopment":true,"anonymizeIP":true,"autoStartWithCookiesEnabled":false,"reactGaOptions":{"debug":true,"gaOptions":{"sampleRate":10}}},
     },{
