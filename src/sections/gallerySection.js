@@ -90,7 +90,7 @@ const GallerySection = () => {
             </div>
             </Fade>
             <div className="container w-100">
-            <Fade delay={200} duration={2000}>
+
                 <StyledDiv>
                     <Gallery
                         targetRowHeight={targetRowHeight}
@@ -99,7 +99,6 @@ const GallerySection = () => {
                         margin={.5}
                     />
                 </StyledDiv>
-            </Fade>
                 <ModalGateway>
                     {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
