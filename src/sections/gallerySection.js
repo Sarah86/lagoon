@@ -47,12 +47,20 @@ const GallerySection = () => {
     }
   `);
 
+  function targetRowHeight(containerWidth) {
+    let targetRowHeight = 100;
+    if (containerWidth >= 500) targetRowHeight = 200;
+    if (containerWidth >= 900) targetRowHeight = 300;
+    if (containerWidth >= 1500) targetRowHeight = 350;
+    return targetRowHeight;
+  }
+
     const photos = data.allFile.edges.map((file, index) => {
         const galleryImage = file.node.childImageSharp;
         return (
             {
                 src: galleryImage.fluid.src,
-                srcset: galleryImage.fluid.srcSet,
+                srcSet: galleryImage.fluid.srcSet,
                 width: galleryImage.original.width,
                 height: galleryImage.original.height,
                 key: `${index}`,
@@ -74,14 +82,6 @@ const GallerySection = () => {
         setViewerIsOpen(false);
     };
 
-    function targetRowHeight(containerWidth) {
-        let targetRowHeight = 100;
-        if (containerWidth >= 500) targetRowHeight = 200;
-        if (containerWidth >= 900) targetRowHeight = 300;
-        if (containerWidth >= 1500) targetRowHeight = 350;
-        return targetRowHeight;
-      }
-
     return (
         <Section id="galeria" noPaddingBottom>
             <Fade duration={2000}>
@@ -90,7 +90,6 @@ const GallerySection = () => {
             </div>
             </Fade>
             <div className="container w-100">
-
                 <StyledDiv>
                     <Gallery
                         targetRowHeight={targetRowHeight}

@@ -50,6 +50,10 @@ body {
     background-color: var(--color-white);
 }
 
+/*Gallery Images*/
+.react-photo-gallery--gallery img {
+    height: initial;
+}
 
 /*Columns*/
 
