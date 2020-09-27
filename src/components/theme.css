@@ -2,7 +2,6 @@
 
 :root{
     --header-size: 60px;
-
     --color-white: #fff;
     --color-primary: #dfab2d;
 	--color-secondary: #40b5e8;
@@ -50,10 +49,6 @@ body {
     background-color: var(--color-white);
 }
 
-/*Gallery Images*/
-.react-photo-gallery--gallery img {
-    height: initial;
-}
 
 /*Columns*/
 

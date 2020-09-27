@@ -131,7 +131,7 @@ a { text-decoration: none; color: var(--color-link); -webkit-transition: all 0.3
 a:hover { color: var(--color-link-hover); }
 a:hover, a:focus { text-decoration: none; }
 
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; /*height: auto;*/ }
 
 textarea { resize: vertical; }
 
