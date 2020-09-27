@@ -27,7 +27,7 @@ const CustomModalFooter = ({ currentIndex, views }) => {
 const GallerySection = () => {
 
     const data = useStaticQuery(graphql`
-    {
+    query galleryImages {
         allFile(filter: {relativeDirectory: {eq: "gallery"}}) {
             edges {
                 node {

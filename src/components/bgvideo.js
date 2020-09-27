@@ -14,7 +14,7 @@ const FullWidthBackgroundVideo = styled(ReactPlayer)`
 const Video = ({ url, width, height }) => {
   
   const data = useStaticQuery(graphql`
-  {
+  query parallaxBackgrounds{
     file(name: {eq: "video-lagoon"}) {
       childImageSharp {
         fluid(quality: 90, jpegProgressive: true, maxWidth: 1400) {

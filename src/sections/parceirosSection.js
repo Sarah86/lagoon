@@ -28,7 +28,7 @@ const StyledFigure = styled.div`
 const ParceirosSection = () => {
 
     const data = useStaticQuery(graphql`
-    {
+    query parceirosLogos {
         allFile(filter: {relativeDirectory: {eq: "parceiros"}}) {
             edges {
                 node {

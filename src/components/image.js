@@ -18,7 +18,7 @@ import Img from 'gatsby-image'
 const Image = props => (
   <StaticQuery
     query={graphql`
-      query {
+      query gatsbyImage {
         allImageSharp {
           edges {
             node {
