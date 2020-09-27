@@ -45,7 +45,7 @@ const AboutSection = () => (
           </div>
           {/* /.lqd-column col-md-5 */}
         </Fade>
-        <Fade delay={1000} duration={2000}>
+        <Fade delay={500} duration={2000}>
           <div className="lqd-column col-sm-6 col-sm-offset-1 text-center h-100">
             <StyledImage
               imgName="terraco-img-01.jpg"
@@ -57,7 +57,7 @@ const AboutSection = () => (
       </div>
       {/* /.row */}
       <div className="row d-flex flex-wrap flex-column-reverse align-items-stretch flex-inverted-only-on-mobile">
-        <Fade delay={1000} duration={2000}>
+        <Fade delay={500} duration={2000}>
           <div className="lqd-column col-sm-6 text-center h-100">
             <StyledImage
               imgName="terraco-img-02.jpg"
@@ -120,7 +120,7 @@ const AboutSection = () => (
           </div>
           {/* /.lqd-column col-md-5 */}
         </Fade>
-        <Fade delay={1000} duration={2000}>
+        <Fade delay={500} duration={2000}>
           <div className="lqd-column col-sm-6 col-sm-offset-1 text-center h-100">
             <StyledImage
               imgName="terraco-img-03.jpg"
