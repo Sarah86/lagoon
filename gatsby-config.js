@@ -66,6 +66,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `estrutura`,
+        path: `${__dirname}/src/images/estrutura`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `assets`,
         path: `${__dirname}/src/components/assets/img`,
       },

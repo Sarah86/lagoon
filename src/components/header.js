@@ -19,13 +19,13 @@ const Header = ({ siteTitle }) => {
   useEffect(() => {
     const html = document.querySelector('html');
     menuActive 
-    ? html.classList.add("mobile-nav-activated", "overflow-hidden")
-    : html.classList.remove("mobile-nav-activated", "overflow-hidden");
+    ? html.classList.add("mobile-nav-activated")
+    : html.classList.remove("mobile-nav-activated");
 
      const body = document.querySelector('body');
     // body.setAttribute("data-mobile-nav-style", "modern");
     body.setAttribute('data-mobile-nav-trigger-alignment', 'right');
-    body.setAttribute('data-mobile-nav-shceme', 'gray');
+    body.setAttribute('data-mobile-nav-scheme', 'gray');
     body.setAttribute('data-mobile-header-scheme', 'gray');
     body.setAttribute('data-mobile-nav-breakpoint', '1199');
   })
@@ -34,12 +34,12 @@ const Header = ({ siteTitle }) => {
   const LinkMenu = Sections.map((section, i) => (
     <li onClick={handleActiveMenu} key={i}>
       <a
-          href={`#${section.id}`}
           onClick={(event) => {
           event.preventDefault();
           scrollTo(`#${section.id}`)
-          }} 
-          style={{ cursor: 'default' }}>
+          }}
+          href={`#${section.id}`}
+          >
         <span className="link-icon" />
         <span className="link-txt">
           <span className="link-ext" />

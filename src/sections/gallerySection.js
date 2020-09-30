@@ -84,11 +84,6 @@ const GallerySection = () => {
 
     return (
         <Section id="galeria" noPaddingBottom>
-            <Fade duration={2000}>
-            <div className="container">
-            <SectionTitle title="Galeria" subtitle="Veja O Que Te Aguarda Em Espaço, Estrutura, Entorno E Vista"/>
-            </div>
-            </Fade>
             <div className="container w-100">
                 <StyledDiv>
                     <Gallery

@@ -8,12 +8,12 @@ import Sections from "./sections.json"
 const Contato = () => (
   <div className="lqd-column col-md-5 col-sm-6 pt-30">
     <h3 className="widget-title text-white">Contato</h3>
-    <p>
+    <p >
     contato@partygroup.com.br
       <br />
       Av. Borges de Medeiros, 1424 Bloco III Lagoa, Rio de Janeiro – RJ – CEP 22470-003
-      <SocialList className="social-icon social-icon-sm pt-30" />
     </p>
+    <SocialList className="social-icon social-icon-sm pt-20" />
   </div>
 )
 

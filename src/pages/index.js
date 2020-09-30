@@ -7,14 +7,17 @@ import AboutSection from "../sections/aboutSection"
 import GallerySection from "../sections/gallerySection"
 import ContatoSection from "../sections/contatoSection"
 import ParallaxBannerLagoon from "../components/parallaxBannerLagoon"
+import EstruturaSection from "../sections/estruturaSection"
+import EstruturaGallerySection from "../sections/estruturaGallerySection"
 
 const IndexPage = () => (
     <Layout>
       <SEO title="Espaço Lagoon" />
       <VideoSection/>
       <AboutSection/>
-      <ParallaxBannerLagoon imgName="1.png"/>
       <GallerySection/>
+      <EstruturaSection/>
+      <EstruturaGallerySection/>
       <ParallaxBannerLagoon imgName="17.jpg"/>
       <ContatoSection/>
       <ParallaxBannerLagoon imgName="16.jpg"/>
