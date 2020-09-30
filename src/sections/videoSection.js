@@ -2,7 +2,6 @@ import React from "react"
 import Video from "../components/bgvideo"
 import FullWidth from "../components/fullWidth"
 import styled from "styled-components"
-import { device } from "../components/devices.js"
 
 const StyledSection = styled.div`
     height: calc(100vh - 40px);
