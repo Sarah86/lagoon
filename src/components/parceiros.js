@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export const Parceiros = () => {
     
-    const {parceiros} = useStaticQuery(graphql`
+    const { parceiros } = useStaticQuery(graphql`
     {
         allFile(filter: {relativeDirectory: {eq: "parceiros"}}) {
             edges {

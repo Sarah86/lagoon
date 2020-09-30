@@ -2,10 +2,8 @@ import React, { useState, useCallback } from "react"
 import Gallery from 'react-photo-gallery'
 import { useStaticQuery, graphql } from "gatsby"
 import Carousel, { Modal, ModalGateway } from "react-images"
-import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 
-import SectionTitle from "../components/sectionTitle"
 import Section from "../components/section"
 
 const StyledDiv = styled.div`
