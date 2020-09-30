@@ -67,7 +67,7 @@ const AboutSection = () => (
           {/* /.lqd-column col-md-6 col-md-offset-1 */}
         </Fade>
         <Fade duration={2000}>
-          <div className="lqd-column col-sm-5 col-sm-offset-1 text-right d-flex align-items-center">
+          <div className="lqd-column col-sm-5 col-sm-offset-1 text-right d-flex align-items-center p-30">
             <p className="mt-30 mb-30" style={{ marginLeft: "30px" }}>
               "O mais estruturado espaço de eventos da zona sul!" Assim pode-se
               defini-lo. Sua estrutura conta com 2 halls de banheiros

@@ -3,8 +3,13 @@ import styled from "styled-components"
 
 const StyledSection = styled.section`
     position: relative;
-    margin-top: 100px;
+    margin-top: ${props => props.noMarginTopOnMobile ? '0' : '100px'};
+    margin-right: 20px;
+    margin-left: 20px;
     padding-bottom: ${props => props.noPaddingBottom ? 0 : '100px'};
+    @media (min-width: 768px) {
+        margin-top: 100px;
+    }
 `
 
 const Section = props => {

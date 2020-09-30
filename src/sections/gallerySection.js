@@ -83,7 +83,7 @@ const GallerySection = () => {
     };
 
     return (
-        <Section id="galeria" noPaddingBottom>
+        <Section id="galeria" noPaddingBottom noMarginTopOnMobile>
             <div className="container w-100">
                 <StyledDiv>
                     <Gallery
