@@ -15,7 +15,7 @@ const VideoSection = () => {
         <StyledSection id="home" className="bg-white z-index-1">
             <FullWidth style={{height: '100%'}}>
                 <Video 
-                    url="https://www.youtube.com/watch?v=S4cVfwV4Wqw" 
+                    url="https://youtu.be/S4cVfwV4Wqw" 
                     width="100vw" 
                     height="100%"
                     backgroundColor=" rgba(0, 0, 0, 0.3)" />

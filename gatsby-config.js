@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-plugin-cookiehub-banner`,
       options: {
           // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-          cookieHubId: "a4c480d0",
+          cookieHubId: "eef763ba",
           // Optional parameter (default false) - Use new v2 API.
           cookieHubV2Api: false,
           // Categories configured with CookieHub
@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics-gdpr`,
       options: {
         // The property ID; the tracking code won't be generated without it.
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID", 
+        trackingId: "UA-179493506-1", 
         // Optional parameter (default false) - Enable analytics in development mode.
         enableDevelopment: true, // default false
         // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
