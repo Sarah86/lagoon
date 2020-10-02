@@ -12,7 +12,7 @@ import EstruturaGallerySection from "../sections/estruturaGallerySection"
 
 const IndexPage = () => (
     <Layout>
-      <SEO title="Espaço Lagoon" />
+      <SEO title="Terraço Lagoon" />
       <VideoSection/>
       <AboutSection/>
       <GallerySection/>

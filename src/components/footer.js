@@ -75,7 +75,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="lqd-column col-md-6 text-md-left">
-              <p className="my-0"><span style={{ fontSize: 15 }}>© 2020 Espaço Lagoon.</span> </p>
+              <p className="my-0"><span style={{ fontSize: 15 }}>© 2020 Terraço Lagoon.</span> </p>
             </div>{/* /.col-md-6 text-md-right */}
             <div className="lqd-column col-md-6 text-md-right">
               <p  className="my-0"><span style={{ fontSize: 15 }}>Design: <a href="http://gara.dj">Alvaro Marques</a>. Desenvolvimento Web: <a href="http://sarahgoncalves.netlify.app">Sarah Gonçalves</a>.</span></p>

@@ -14,8 +14,8 @@ const ParallaxImage = ({imgName}) => (
             imgStyle={{
                 mixBlendMode: 'overlay', 
                 filter: 'brightness(.8) grayscale(1)'}} 
-            title="Espaço Lagoon" 
-            alt="Espaço Lagoon" />
+            title="Terraço Lagoon" 
+            alt="Terraço Lagoon" />
     </Parallax>
 );
 

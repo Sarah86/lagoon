@@ -20,8 +20,8 @@ const ParallaxBannerLagoon = (props) => {
                     imgName={props.imgName} 
                         style={{
                             height: '100%'}} 
-                        title="Espaço Lagoon" 
-                        alt="Espaço Lagoon" />,
+                        title="Terraço Lagoon" 
+                        alt="Terraço Lagoon" />,
                     amount: 0.3,
                 }
             ]}
