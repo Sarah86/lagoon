@@ -8,7 +8,7 @@ const StyledSection = styled.section`
     margin-left: 10px;
     padding-bottom: ${props => props.noPaddingBottom ? 0 : '100px'};
     @media (min-width: 768px) {
-        margin-top: 100px;
+        margin-top: ${props => props.noMarginTopOnDesktop ? '0' : '100px'};
     }
 `
 

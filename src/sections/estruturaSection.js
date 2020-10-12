@@ -36,7 +36,7 @@ const EstruturaSection = () => (
               <li>Armários Expositores com LED</li>
               <li>33m de Balcão</li>
               <li>Palco Cenografado com 8,00 x 6,00m x 1,00m</li>
-              <li>Cenografia preparada para receber projeção mapeada</li>
+              <li>Cenografia de Boca de Cena preparada para receber projeção mapeada</li>
               <li>06 Camarotes suspensos com guarda corpo com 3,00 x 3,00m </li>
               <li>Tenda Check In com balcão</li>
               <li>02 Camarins climatizados</li>

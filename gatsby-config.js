@@ -10,50 +10,58 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     {
-      resolve: `gatsby-plugin-cookiehub-banner`,
+      resolve: `gatsby-plugin-cookiehub`,
       options: {
-          // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-          cookieHubId: "eef763ba",
-          // Optional parameter (default false) - Use new v2 API.
-          cookieHubV2Api: false,
-          // Categories configured with CookieHub
-          categories: [
-          { 
-              categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-              cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
-          },
-          { 
-              categoryName: 'marketing',
-              cookieName: 'marketing-enabled'
-          }
-          ]
+        // your cookiehub widget ID
+        cookihubId: `eef763ba`,
+        // your google analytics tracking id
+        trackingId: `UA-179493506-1`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,        
       },
     },
-     {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
+     /*{
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        // The property ID; the tracking code won't be generated without it.
-        trackingId: "UA-179493506-1", 
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: true, // default false
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: true,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false, 
-        // Optional parameter - Configuration for react-ga and google analytics 
-        reactGaOptions: {
-            debug: true,
-            gaOptions: {
-                sampleRate: 10
-            }
-        }
+        googleAnalytics: {
+          trackingId: 'UA-179493506-1', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics', // default
+          anonymize: true // default
+        },/*
+        googleTagManager: {
+          trackingId: 'YOUR_GOOGLE_TAG_MANAGER_TRACKING_ID', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-tagmanager', // default
+          dataLayerName: 'dataLayer', // default
+        },
+        facebookPixel: {
+          pixelId: 'YOUR_FACEBOOK_PIXEL_ID', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-facebook-pixel', // default
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
       },
-    },
+    },*/
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `palco`,
+        path: `${__dirname}/src/images/palco`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `externa`,
+        path: `${__dirname}/src/images/externa`,
       },
     },
     {
@@ -66,8 +74,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `estrutura`,
-        path: `${__dirname}/src/images/estrutura`,
+        name: `bath`,
+        path: `${__dirname}/src/images/bath`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `highlight`,
+        path: `${__dirname}/src/images/highlight`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bar`,
+        path: `${__dirname}/src/images/bar`,
       },
     },
     {

@@ -26,7 +26,7 @@ const EstruturaGallerySection = () => {
 
     const data = useStaticQuery(graphql`
     query estruturagalleryImages {
-        allFile(filter: {relativeDirectory: {eq: "estrutura"}}) {
+        allFile(filter: {relativeDirectory: {eq: "palco"}}) {
             edges {
                 node {
                   childImageSharp {

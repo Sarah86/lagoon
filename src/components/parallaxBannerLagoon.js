@@ -22,7 +22,7 @@ const ParallaxBannerLagoon = (props) => {
                             height: '100%'}} 
                         title="Terraço Lagoon" 
                         alt="Terraço Lagoon" />,
-                    amount: 0.3,
+                    amount: 0.6,
                 }
             ]}
             style={{

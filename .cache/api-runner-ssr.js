@@ -5,8 +5,8 @@ var plugins = [{
       plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-cookiehub-banner/gatsby-ssr'),
-      options: {"plugins":[],"cookieHubId":"eef763ba","cookieHubV2Api":false,"categories":[{"categoryName":"analytics","cookieName":"gatsby-plugin-google-analytics-gdpr_cookies-enabled"},{"categoryName":"marketing","cookieName":"marketing-enabled"}]},
+      plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-cookiehub/gatsby-ssr'),
+      options: {"plugins":[],"cookihubId":"eef763ba","trackingId":"UA-179493506-1","head":false,"anonymize":true},
     },{
       plugin: require('/mnt/c/Users/sarah/OneDrive/Documentos/PROJETOS/__DONE/LAGOON/lagoon-website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Terraço Lagoon","short_name":"lagoon","start_url":"/","background_color":"#ffff","theme_color":"#40b5e8","display":"minimal-ui","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"85c102391d08885bdb0da3278b8a2532"},

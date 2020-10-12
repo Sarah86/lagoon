@@ -9,6 +9,10 @@ import ContatoSection from "../sections/contatoSection"
 import ParallaxBannerLagoon from "../components/parallaxBannerLagoon"
 import EstruturaSection from "../sections/estruturaSection"
 import EstruturaGallerySection from "../sections/estruturaGallerySection"
+import BathSection from "../sections/bathSection"
+import HightlightSection from "../sections/highlightSection"
+import BarGallerySection from "../sections/barGallerySection"
+import ExternaGallerySetion from "../sections/eternaGallerySection"
 
 const IndexPage = () => (
     <Layout>
@@ -18,9 +22,13 @@ const IndexPage = () => (
       <GallerySection/>
       <EstruturaSection/>
       <EstruturaGallerySection/>
-      <ParallaxBannerLagoon imgName="17.jpg"/>
+      <BarGallerySection/>
+      <ExternaGallerySetion/>
+      <BathSection/>
+      <HightlightSection/>
+      <ParallaxBannerLagoon imgName="parallax-01.jpg"/>
       <ContatoSection/>
-      <ParallaxBannerLagoon imgName="16.jpg"/>
+      <ParallaxBannerLagoon imgName="parallax-02.jpg"/>
     </Layout>
 )
 
