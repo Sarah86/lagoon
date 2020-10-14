@@ -25,9 +25,9 @@ const EstruturaSection = () => (
               subtitle="Dados técnicos, facilidades e serviço"
             />
             <ul style={{ marginLeft: "-1.5em" }}>
-              <li>Área coberta: 2.015m</li>
-              <li>Área open air: 310m2</li>
-              <li>Área total: 2.325m2</li>
+              <li>Área coberta: 1.600m2</li>
+              <li>Área open air: 400m2</li>
+              <li>Área total: 2.000m2</li>
               <li>02 Halls de Banheiros Climatizados</li>
               <li>36 cabines FEM</li>
               <li>12 cabines MAS</li>

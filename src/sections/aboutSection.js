@@ -48,7 +48,7 @@ const AboutSection = () => (
         <Fade delay={500} duration={2000}>
           <div className="lqd-column col-sm-6 col-sm-offset-1 text-center h-100">
             <StyledImage
-              imgName="terraco-img-01.jpg"
+              imgName="lagoon-eventos_12_1.jpg"
               style={{ height: "100%" }}
             />
           </div>
@@ -60,7 +60,7 @@ const AboutSection = () => (
         <Fade delay={500} duration={2000}>
           <div className="lqd-column col-sm-6 text-center h-100">
             <StyledImage
-              imgName="terraco-img-02.jpg"
+              imgName="lagoon-eventos_13_1.jpg"
               style={{ height: "100%", marginRight: "-2em" }}
             />
           </div>
