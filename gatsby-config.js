@@ -9,19 +9,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-plugin-cookiehub`,
-      options: {
-        // your cookiehub widget ID
-        cookihubId: `eef763ba`,
-        // your google analytics tracking id
-        trackingId: `UA-179493506-1`,
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // enable ip anonymization
-        anonymize: true,        
-      },
-    },
      /*{
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
