@@ -8,7 +8,7 @@ const Form = () => {
                                 <h5 className="my-0 font-size-30 text-dark" style={{lineHeight: 1}}>Envie uma mensagem</h5>
                             </header>{/* /.fancy-title */}
                             <div className="contact-form contact-form-inputs-sm contact-form-inputs-underlined contact-form-button-md contact-form-button-block">
-                                <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                <form name="contact" method="post" action="https://formspree.io/f/xleolpqz" method="POST">
                                 <input type="hidden" name="form-name" value="contact" />
                                     <div className="row">
                                         <div className="lqd-column col-md-12">
